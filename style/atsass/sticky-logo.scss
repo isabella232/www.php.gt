@@ -1,0 +1,46 @@
+._sticky-logo {
+	$logo-size: 3rem;
+	@mixin logo-bg() {
+		background-image: url(/asset/image/logo.svg);
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+	}
+
+	@extend %margin-s;
+	position: relative;
+	height: $logo-size;
+
+	>a {
+		&::before {
+			@include logo-bg();
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			width: $logo-size;
+			height: $logo-size;
+
+			@media(min-width: $break-m) {
+				position: fixed;
+				top: $size-s;
+				left: $size-s;
+			}
+		}
+
+		@include logo-bg();
+		display: block;
+		height: 100%;
+		margin-left: $logo-size;
+		background-position-x: -$logo-size;
+		text-decoration: none;
+		color: transparent;
+
+		>span {
+			@extend %padding-xs, %padding-horizontal;
+			display: block;
+			line-height: $logo-size;
+			font-size: 1.25rem;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+%padding {
+	// Sizes:
+	&-xs {
+		padding: $size-xs;
+	}
+
+	&-s {
+		padding: $size-s;
+	}
+
+	&-m {
+		padding: $size-m;
+	}
+
+	&-l {
+		padding: $size-l;
+	}
+
+	&-xl {
+		padding: $size-xl;
+	}
+
+	// Directions:
+	&-horizontal {
+		padding-top: inherit;
+		padding-bottom: inherit;
+	}
+	&-vertical {
+		padding-left: inherit;
+		padding-right: inherit;
+	}
+}

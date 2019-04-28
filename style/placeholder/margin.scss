@@ -1,0 +1,32 @@
+%margin {
+	// Sizes:
+	&-xs {
+		margin: $size-xs;
+	}
+
+	&-s {
+		margin: $size-s;
+	}
+
+	&-m {
+		margin: $size-m;
+	}
+
+	&-l {
+		margin: $size-l;
+	}
+
+	&-xl {
+		margin: $size-xl;
+	}
+
+	// Directions:
+	&-horizontal {
+		margin-top: inherit;
+		margin-bottom: inherit;
+	}
+	&-vertical {
+		margin-left: inherit;
+		margin-right: inherit;
+	}
+}

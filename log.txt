@@ -3,3 +3,4 @@ Atsass basics
 Hello World testing breakpoints
 Markup homepage
 Add manifest
+Style responsive sticky logo
