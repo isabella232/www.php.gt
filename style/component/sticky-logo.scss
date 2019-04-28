@@ -1,5 +1,5 @@
 ._sticky-logo {
-	$logo-size: 3rem;
+	$logo-size: 2.5rem;
 	@mixin logo-bg() {
 		background-image: url(/asset/image/logo.svg);
 		background-size: auto $logo-size;
@@ -11,11 +11,11 @@
 	height: $logo-size;
 
 	>a {
-		@extend %padding-s;
+		@extend %padding-m;
 		@include logo-bg();
 		display: block;
 		height: 100%;
-		margin-left: ($logo-size + $size-s);
+		margin-left: ($logo-size + $size-m);
 		background-position-x: -($logo-size);
 		text-decoration: none;
 		color: transparent;
@@ -24,8 +24,8 @@
 			@include logo-bg();
 			display: block;
 			position: absolute;
-			top: $size-s;
-			left: $size-s;
+			top: $size-m;
+			left: $size-m;
 			content: "";
 			width: $logo-size;
 			height: $logo-size;
