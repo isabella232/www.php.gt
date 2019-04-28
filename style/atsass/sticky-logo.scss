@@ -2,39 +2,38 @@
 	$logo-size: 3rem;
 	@mixin logo-bg() {
 		background-image: url(/asset/image/logo.svg);
-		background-size: auto 100%;
+		background-size: auto $logo-size;
 		background-repeat: no-repeat;
+		background-position-y: 50%;
 	}
 
-	@extend %margin-s;
 	position: relative;
 	height: $logo-size;
 
 	>a {
+		@extend %padding-s;
+		@include logo-bg();
+		display: block;
+		height: 100%;
+		margin-left: ($logo-size + $size-s);
+		background-position-x: -($logo-size);
+		text-decoration: none;
+		color: transparent;
+
 		&::before {
 			@include logo-bg();
 			display: block;
 			position: absolute;
-			top: 0;
-			left: 0;
+			top: $size-s;
+			left: $size-s;
 			content: "";
 			width: $logo-size;
 			height: $logo-size;
 
 			@media(min-width: $break-m) {
 				position: fixed;
-				top: $size-s;
-				left: $size-s;
 			}
 		}
-
-		@include logo-bg();
-		display: block;
-		height: 100%;
-		margin-left: $logo-size;
-		background-position-x: -$logo-size;
-		text-decoration: none;
-		color: transparent;
 
 		>span {
 			@extend %padding-xs, %padding-horizontal;
