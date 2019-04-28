@@ -10,6 +10,7 @@
 
  @import "placeholder/margin";
  @import "placeholder/padding";
+ @import "placeholder/gutter";
 
 @import "global/normalize";
 @import "global/typography";
@@ -24,3 +25,4 @@
 @import "component/global-header";
 @import "component/sticky-logo";
 @import "component/site-nav";
+@import "component/hero";

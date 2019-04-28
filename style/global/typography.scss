@@ -1,5 +1,6 @@
 html {
 	font-size: 16px;
+	color: $palette-1-dark;
 
 	@media(min-width: $break-s) {
 		font-size: 18px;
