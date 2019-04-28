@@ -1,0 +1,10 @@
+%reading-column {
+	max-width: $break-m;
+
+	&-xs {
+		max-width: $break-m / 2;
+	}
+	&-s {
+		max-width: $break-s;
+	}
+}

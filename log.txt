@@ -11,3 +11,4 @@ Overlay
 Check accessibility of controls
 Add hero section and iframe for presentation
 Smooth scroll clicking logo
+Begin styling concertina (complex due to different display on mobile/desktop)

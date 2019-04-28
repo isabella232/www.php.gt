@@ -1,0 +1,31 @@
+._intro {
+	@extend %padding-m;
+	margin-bottom: $size-xl;
+	background-image: url("/asset/image/hex-bg.svg"),
+		radial-gradient(
+			circle at 0 0,
+			#e6f8ff 14%,
+			#fffcee 100%,
+			#004B67 100%
+		);
+	background-size: auto 100%, 100%;
+	background-repeat: repeat-x, no-repeat;
+	background-position: bottom, 50%;
+
+	>h1 {
+		font-size: 1.5rem;
+		margin-top: $size-l;
+		margin-bottom: $size-l;
+	}
+	>h1, >h2, >p {
+		@extend %gutter, %reading-column;
+	}
+
+	>div {
+		@extend %gutter;
+
+		a {
+			@extend button;
+		}
+	}
+}
