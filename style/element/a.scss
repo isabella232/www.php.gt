@@ -1,0 +1,15 @@
+a {
+	color: $palette-1-dark;
+
+	&:visited {
+		color: $palette-2;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:focus {
+		outline: 4px solid $palette-6;
+	}
+}

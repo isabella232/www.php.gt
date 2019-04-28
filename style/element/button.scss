@@ -1,0 +1,19 @@
+button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	background: $palette-panel-light;
+	border: 1px solid rgba($palette-panel-dark, 0.5);
+	padding: $size-s $size-m;
+
+	&:hover {
+		border-color: $palette-panel-dark;
+	}
+
+	&:focus, input[type='checkbox']:focus+&, input[type='radio']:focus+& {
+		outline: 4px solid $palette-6;
+	}
+}

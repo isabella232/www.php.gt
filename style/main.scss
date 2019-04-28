@@ -6,7 +6,8 @@
 @import "var/palette";
 @import "var/size";
 
-// @import "pattern/";
+ @import "pattern/toggle";
+
  @import "placeholder/margin";
  @import "placeholder/padding";
 
@@ -17,7 +18,9 @@
 @import "element/h";
 @import "element/p";
 @import "element/ul";
+@import "element/a";
+@import "element/button";
 
-@import "atsass/global-header";
-@import "atsass/sticky-logo";
-@import "atsass/site-nav";
+@import "component/global-header";
+@import "component/sticky-logo";
+@import "component/site-nav";
