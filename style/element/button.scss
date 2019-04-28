@@ -8,6 +8,7 @@ button {
 	background: $palette-panel-light;
 	border: 1px solid rgba($palette-panel-dark, 0.5);
 	padding: $size-s $size-m;
+	color: initial;
 
 	&:hover {
 		border-color: $palette-panel-dark;

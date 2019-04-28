@@ -10,21 +10,30 @@
 	}
 
 	@extend %padding-m, %padding-horizontal;
-	display: flex;
-	flex-direction: column;
-	max-width: $break-l;
-	padding-top: $size-xl;
+	>div {
+		@extend %gutter;
+		position: relative;
 
-	@media(min-width: $break-xl) {
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
+		&:first-of-type {
+			padding-top: $size-xl;
+			display: flex;
+			flex-direction: column;
+			max-width: $break-l;
+
+			@media(min-width: $break-xl) {
+				flex-direction: row;
+				align-items: center;
+			}
+		}
 	}
 
-	>h1 {
-		@extend %gutter;
-		font-size: 2.5rem;
+	h1 {
+		font-size: 2rem;
 		min-width: 28rem;
+
+		@media(min-width: $break-m) {
+			$font-size: 2.5rem;
+		}
 
 		>span {
 			display: block;
@@ -38,11 +47,11 @@
 		}
 	}
 
-	>iframe {
-		@extend %gutter;
+	iframe {
 		width: 100%;
 		height: 75vw;
 		border: none;
+		margin-bottom: $size-s;
 
 		@media(min-width: $break-m) {
 			width: 30rem;
@@ -53,6 +62,16 @@
 			margin-left: 0;
 			width: 28rem;
 			height: 21rem;
+		}
+	}
+
+	a {
+		@extend button;
+		display: inline-block;
+
+		@media(min-width: $break-xl) {
+			position: relative;
+			top: -2.75rem;
 		}
 	}
 }
