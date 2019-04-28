@@ -1,4 +1,5 @@
 %toggle {
+	position: absolute;
 	transform: translateX(-200vw);
 
 	&.toggle-only-break-s~label {
@@ -28,34 +29,31 @@
 		}
 	}
 
-	~.toggle-target {
-		display: none;
-
+	&:not(:checked)~.toggle-target {
 		&.toggle-target-only-break-s {
-			@media(min-width: $break-s) {
-				display: initial;
+			@media(max-width: $break-s) {
+				display: none;
 			}
 		}
 
 		&.toggle-target-only-break-m {
-			@media(min-width: $break-m) {
-				display: initial;
+			@media(max-width: $break-m) {
+				display: none;
 			}
 		}
 
 		&.toggle-target-only-break-l {
-			@media(min-width: $break-l) {
-				display: initial;
+			@media(max-width: $break-l) {
+				display: none;
 			}
 		}
 
 		&.toggle-target-only-break-xl {
-			@media(min-width: $break-xl) {
-				display: initial;
+			@media(max-width: $break-xl) {
+				display: none;
 			}
 		}
 	}
-
 
 	&:checked {
 		~.toggle-control {
@@ -81,7 +79,6 @@
 		}
 
 		~.toggle-target {
-			display: initial;
 			z-index: 1;
 		}
 	}

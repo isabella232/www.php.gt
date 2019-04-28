@@ -16,8 +16,18 @@
 		background: $palette-panel-light;
 		border: 1px solid $palette-1-dark;
 
+		@media(min-width: $break-m) {
+			display: flex;
+			background: transparent;
+			border: none;
+		}
+
 		>li {
 			border-bottom: 1px solid rgba($palette-1-dark, 0.2);
+
+			@media(min-width: $break-m) {
+				border: none;
+			}
 
 			&:last-of-type {
 				border-bottom: none;
@@ -28,6 +38,10 @@
 				padding: $size-s $size-m;
 				text-decoration: none;
 				color: $palette-1-dark;
+				
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
