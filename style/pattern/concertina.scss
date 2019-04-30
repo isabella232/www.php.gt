@@ -2,7 +2,7 @@
 	[name='concertina'] {
 		display: none;
 
-		&:not(:checked)~.concertina-target {
+		&:not(:checked)~%concertina-target {
 			display: none;
 		}
 	}

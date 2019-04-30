@@ -2,53 +2,53 @@
 	position: absolute;
 	transform: translateX(-200vw);
 
-	&.toggle-only-break-s~label {
+	&%toggle-only-break-s~label {
 		@media(min-width: $break-s) {
 			display: none;
 		}
 	}
-	&.toggle-only-break-m~label {
+	&%toggle-only-break-m~label {
 		@media(min-width: $break-m) {
 			display: none;
 		}
 	}
-	&.toggle-only-break-l~label {
+	&%toggle-only-break-l~label {
 		@media(min-width: $break-l) {
 			display: none;
 		}
 	}
-	&.toggle-only-break-xl~label {
+	&%toggle-only-break-xl~label {
 		@media(min-width: $break-xl) {
 			display: none;
 		}
 	}
 
-	~.toggle-control {
+	~%toggle-control {
 		&::after {
 			content: attr(data-toggle-control-inactive);
 		}
 	}
 
-	&:not(:checked)~.toggle-target {
-		&.toggle-target-only-break-s {
+	&:not(:checked)~%toggle-target {
+		&%toggle-target-only-break-s {
 			@media(max-width: $break-s) {
 				display: none;
 			}
 		}
 
-		&.toggle-target-only-break-m {
+		&%toggle-target-only-break-m {
 			@media(max-width: $break-m) {
 				display: none;
 			}
 		}
 
-		&.toggle-target-only-break-l {
+		&%toggle-target-only-break-l {
 			@media(max-width: $break-l) {
 				display: none;
 			}
 		}
 
-		&.toggle-target-only-break-xl {
+		&%toggle-target-only-break-xl {
 			@media(max-width: $break-xl) {
 				display: none;
 			}
@@ -56,7 +56,7 @@
 	}
 
 	&:checked {
-		~.toggle-control {
+		~%toggle-control {
 			position: relative;
 			z-index: 1;
 
@@ -65,7 +65,7 @@
 			}
 		}
 
-		~.toggle-overlay {
+		~%toggle-overlay {
 			&::before {
 				content: "";
 				position: fixed;
@@ -78,7 +78,7 @@
 			}
 		}
 
-		~.toggle-target {
+		~%toggle-target {
 			z-index: 1;
 		}
 	}

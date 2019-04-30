@@ -2,15 +2,15 @@
 	@extend %margin-m;
 
 	>input {
-		@extend %toggle, .toggle-only-break-m;
+		@extend %toggle, %toggle-only-break-m;
 	}
 
 	>label {
-		@extend button, .toggle-control, .toggle-overlay;
+		@extend button, %toggle-control, %toggle-overlay;
 	}
 
 	>ul {
-		@extend .toggle-target, .toggle-target-only-break-m;
+		@extend %toggle-target, %toggle-target-only-break-m;
 		position: absolute;
 		right: 0;
 		background: $palette-panel-light;

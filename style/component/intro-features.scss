@@ -20,7 +20,7 @@
 			}
 
 			> div {
-				@extend .concertina-target;
+				@extend %concertina-target;
 			//	position: relative;
 			//
 				@media(min-width: $break-l) {
