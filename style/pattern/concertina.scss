@@ -2,8 +2,10 @@
 	[name='concertina'] {
 		display: none;
 
-		&:not(:checked)~%concertina-target {
-			display: none;
+		&:not(:checked) {
+			&~%concertina-target, &~*>%concertina-target, &~*>*>%concertina-target {
+				display: none;
+			}
 		}
 	}
 }

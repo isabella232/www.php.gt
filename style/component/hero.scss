@@ -30,7 +30,7 @@
 	}
 
 	h1 {
-		font-size: 2rem;
+		font-size: $font-size-xl;
 		min-width: 28rem;
 
 		@media(min-width: $break-m) {

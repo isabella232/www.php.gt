@@ -1,8 +1,12 @@
 ._intro-features {
+	@extend %padding-m, %padding-horizontal;
+	position: relative;
 	margin-bottom: $size-xl;
 
 	>ul {
-		@extend %concertina;
+		@extend %concertina, %gutter;
+
+		padding-top: $size-l + $size-s;
 
 		> li {
 			> label {
@@ -12,17 +16,36 @@
 				> svg {
 					width: $size-l;
 					height: $size-l;
+					cursor: pointer;
+
+					position: absolute;
+					top: 0;
+
+					@media(min-width: $break-m) {
+						position: initial;
+						margin-right: $size-m;
+					}
+
+					> circle {
+						stroke: #F4F4F4;
+						stroke-width: 16;
+						fill: none;
+					}
 				}
 
 				> h1 {
+					@extend %concertina-target;
+					font-size: $font-size-l;
 
+					@media(min-width: $break-m) {
+						display: block !important;
+					}
 				}
 			}
 
 			> div {
 				@extend %concertina-target;
-			//	position: relative;
-			//
+
 				@media(min-width: $break-l) {
 			//		display: flex;
 				}
@@ -55,6 +78,16 @@
 			//			height: 100%;
 			//			max-height: 18rem;
 						border: none;
+					}
+				}
+			}
+
+			@for $i from 0 through 5 {
+				&:nth-of-type(#{$i}) > label > svg {
+					margin-left: (($i - 1) * ($size-l + $size-m));
+
+					@media(min-width: $break-m) {
+						margin-left: initial;
 					}
 				}
 			}
