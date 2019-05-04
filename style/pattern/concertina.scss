@@ -1,6 +1,8 @@
 %concertina {
 	[name='concertina'] {
-		display: none;
+		visibility: hidden;
+		position: absolute;
+		transform: translateX(-1000%);
 
 		&:not(:checked) {
 			&~%concertina-target, &~*>%concertina-target, &~*>*>%concertina-target {
