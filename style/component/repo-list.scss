@@ -1,0 +1,14 @@
+._repo-list {
+	background: $palette-panel-dark;
+	color: $palette-text-alt;
+
+	>h1 {
+		@extend %gutter, %padding-m;
+		color: $palette-6;
+		font-size: $font-size-l;
+	}
+
+	>p {
+		@extend %gutter, %padding-m, %padding-horizontal, %reading-column-s;
+	}
+}
