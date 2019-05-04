@@ -1,6 +1,5 @@
 %concertina {
 	[name='concertina'] {
-		visibility: hidden;
 		position: absolute;
 		transform: translateX(-1000%);
 
@@ -8,6 +7,10 @@
 			&~%concertina-target, &~*>%concertina-target, &~*>*>%concertina-target {
 				display: none;
 			}
+		}
+
+		&:checked~* {
+			@extend %concertina-active;
 		}
 	}
 }

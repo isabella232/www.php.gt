@@ -40,6 +40,11 @@
 					}
 				}
 
+				&%concertina-active > svg > circle:last-of-type {
+					stroke: $palette-1;
+
+				}
+
 				> h1 {
 					@extend %concertina-target;
 					font-size: $font-size-l;

@@ -2,4 +2,8 @@ label {
 	&:focus {
 		outline: 4px solid $palette-6;
 	}
+
+	[type='radio']:focus~& {
+		outline: 4px solid $palette-6;
+	}
 }
