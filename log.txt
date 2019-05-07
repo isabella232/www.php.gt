@@ -14,3 +14,4 @@ Smooth scroll clicking logo
 Begin styling concertina (complex due to different display on mobile/desktop)
 Add pips to centre of concertina circles
 Style empty repo list
+Grid layout repo list

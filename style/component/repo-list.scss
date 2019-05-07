@@ -4,11 +4,79 @@
 
 	>h1 {
 		@extend %gutter, %padding-m;
+		padding-top: $size-xl;
 		color: $palette-6;
-		font-size: $font-size-l;
+		font-size: $font-size-xl;
 	}
 
 	>p {
 		@extend %gutter, %padding-m, %padding-horizontal, %reading-column-s;
+	}
+
+	>ul {
+		@extend %gutter,%padding-m, %reading-column;
+
+		@media(min-width: $break-m) {
+			display: grid;
+			grid-gap: $size-m;
+			grid-template-columns: 50% 50%;
+		}
+		@media(min-width: $break-l) {
+			grid-template-columns: 33.33% 33.33% 33.33%;
+		}
+
+		>li {
+
+			position: relative;
+			border-bottom: 1px solid rgba($palette-text-alt, 0.5);
+
+			&:last-of-type {
+				border: none;
+			}
+
+			>a {
+				display: block;
+				overflow: hidden;
+				text-decoration: none;
+				color: $palette-text-alt;
+
+				&::after {
+					@extend %margin-m;
+					margin-right: 0;
+
+					position: absolute;
+					content: "";
+					background-image: url("/asset/image/chevron.svg");
+					background-repeat: no-repeat;
+					background-position: 50%;
+					background-size: 20%;
+					top: 0;
+					right: 0;
+					width: $size-l;
+					height: $size-l;
+					padding: $size-s;
+					border: 1px solid rgba($palette-text-alt, 0.5);
+				}
+
+				@media(min-width: $break-m) {
+					&::after {
+						display: none;
+					}
+				}
+
+				&:hover {
+					background: rgba(white, 0.1);
+				}
+
+				>h1 {
+					@extend %margin-m, %margin-vertical;
+					font-size: $font-size-l;
+				}
+
+				>p {
+
+				}
+			}
+		}
 	}
 }
