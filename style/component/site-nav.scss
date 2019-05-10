@@ -45,4 +45,22 @@
 			}
 		}
 	}
+	
+	body>footer & {
+		text-align: center;
+		margin: 0;
+
+		ul {
+			@extend %padding-l, %reading-column;
+			position: static;
+			left: 0;
+			justify-content: center;
+			border: none;
+			background: transparent;
+
+			>li {
+				border: none;
+			}
+		}
+	}
 }

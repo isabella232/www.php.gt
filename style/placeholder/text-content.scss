@@ -1,0 +1,12 @@
+%text-content {
+	@extend %gutter, %margin-l, %margin-vertical, %padding-m;
+
+	h1 {
+		@extend %reading-column;
+		font-size: $font-size-l;
+	}
+
+	p {
+		@extend %reading-column;
+	}
+}
