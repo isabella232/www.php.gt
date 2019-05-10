@@ -132,38 +132,19 @@
 		Sorted by number of Github stars.
 	</p>
 
+	<input type="checkbox" id="repo-list-show-all" />
 	<ul>
-		<li>
+		<li data-template>
 			<a href="/docs/{repo}">
-				<h1>Repo Name</h1>
-				<p>Repo description.</p>
-			</a>
-		</li>
-		<li>
-			<a href="/docs/{repo}">
-				<h1>Repo Name</h1>
-				<p>Repo description.</p>
-			</a>
-		</li>
-		<li>
-			<a href="/docs/{repo}">
-				<h1>Repo Name</h1>
-				<p>Repo description.</p>
-			</a>
-		</li>
-		<li>
-			<a href="/docs/{repo}">
-				<h1>Repo Name</h1>
-				<p>Repo description.</p>
-			</a>
-		</li>
-		<li>
-			<a href="/docs/{repo}">
-				<h1>Repo Name</h1>
-				<p>Repo description.</p>
+				<h1 data-bind:text="name">Repo Name</h1>
+				<p data-bind:text="description">Repo description.</p>
 			</a>
 		</li>
 	</ul>
+
+	<div>
+		<label for="repo-list-show-all">Show all…</label>
+	</div>
 
 </section>
 

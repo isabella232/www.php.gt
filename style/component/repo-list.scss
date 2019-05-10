@@ -30,10 +30,6 @@
 			position: relative;
 			border-bottom: 1px solid rgba($palette-text-alt, 0.5);
 
-			&:last-of-type {
-				border: none;
-			}
-
 			>a {
 				display: block;
 				overflow: hidden;
@@ -76,6 +72,37 @@
 				>p {
 
 				}
+			}
+		}
+	}
+
+	#repo-list-show-all {
+		display: none;
+
+		&:not(:checked) {
+			~ul {
+				li {
+					@for $i from 7 through 20 {
+						&:nth-child(#{$i}) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		&:checked {
+			~div {
+				display: none;
+			}
+		}
+		
+		~div {
+			@extend %padding-m, %reading-column;
+			text-align: center;
+
+			label {
+				@extend button;
+				display: inline-block;
 			}
 		}
 	}
