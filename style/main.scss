@@ -6,11 +6,12 @@
 @import "var/palette";
 @import "var/size";
 
- @import "pattern/toggle";
- @import "pattern/concertina";
-
 @import "global/normalize";
 @import "global/typography";
+
+ @import "pattern/toggle";
+ @import "pattern/concertina";
+ @import "pattern/section-layout";
 
  @import "placeholder/margin";
  @import "placeholder/padding";
@@ -28,6 +29,7 @@
 @import "element/label";
 @import "element/iframe";
 
+@import "component/error";
 @import "component/global-header";
 @import "component/global-footer";
 @import "component/sticky-logo";
@@ -37,3 +39,7 @@
 @import "component/intro-features";
 @import "component/repo-list";
 @import "component/contributing";
+
+@import "page/_error";
+@import "page/contributing";
+@import "page/help";

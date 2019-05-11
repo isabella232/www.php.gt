@@ -17,3 +17,4 @@ Style empty repo list
 Grid layout repo list
 Github repo loader
 Show more button on repo list
+Add page styles, extract section layout

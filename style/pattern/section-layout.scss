@@ -1,0 +1,17 @@
+%section-layout {
+	>section {
+		@extend %padding-m;
+
+		>h1 {
+			@extend %gutter;
+			font-size: $font-size-l;
+			margin-top: $size-xl;
+		}
+
+		>p {
+			@extend %reading-column, %gutter;
+		}
+
+		@extend %padding-m;
+	}
+}
