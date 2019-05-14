@@ -5,6 +5,7 @@ use Gt\WebEngine\Logic\Page;
 
 class _DocPage extends Page {
 	public function go() {
-		die("this");
+		$repo = $this->dynamicPath->get("repo");
+		$doc =  $this->dynamicPath->get("doc");
 	}
 }
